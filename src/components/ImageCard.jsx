@@ -5,7 +5,7 @@ export default function ImageCard({ image, onToggleFavorite, onPreview, onRemove
         <button
           type="button"
           onClick={() => onPreview(image)}
-          className="block h-64 w-full cursor-zoom-in text-left sm:h-72"
+          className="block h-56 w-full cursor-zoom-in text-left sm:h-64 lg:h-72"
           aria-label={`Preview ${image.name}`}
         >
           <img
@@ -38,12 +38,12 @@ export default function ImageCard({ image, onToggleFavorite, onPreview, onRemove
           Added {new Date(image.createdAt || Date.now()).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
         </p>
 
-        <div className="mt-4 flex items-center justify-between gap-2 border-t border-white/10 pt-4">
-          <button type="button" onClick={() => onPreview(image)} className="rounded-full bg-white/10 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-200 hover:text-slate-950">
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-2 border-t border-white/10 pt-4">
+          <button type="button" onClick={() => onPreview(image)} className="rounded-full bg-white/10 px-3.5 py-2.5 text-xs font-semibold text-white transition hover:bg-emerald-200 hover:text-slate-950 sm:px-4 sm:text-sm">
             Preview image
           </button>
           <div className="flex items-center gap-1">
-            <a href={image.url} target="_blank" rel="noreferrer" title="Open original image" className="rounded-full px-4 py-2.5 text-sm font-semibold text-white/65 transition hover:bg-white/10 hover:text-white">Open original</a>
+            <a href={image.url} target="_blank" rel="noreferrer" title="Open original image" className="rounded-full px-3.5 py-2.5 text-xs font-semibold text-white/65 transition hover:bg-white/10 hover:text-white sm:px-4 sm:text-sm">Open original</a>
             <button type="button" onClick={() => onRemove(image.id)} title="Remove from this gallery only" aria-label={`Remove ${image.name} from gallery`} className="flex h-10 w-10 items-center justify-center rounded-full text-lg text-white/60 transition hover:bg-red-500/20 hover:text-red-200">×</button>
           </div>
         </div>

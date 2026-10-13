@@ -14,13 +14,13 @@ export default function ImagePreviewModal({ image, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-end justify-center bg-slate-950/80 p-2 pb-0 backdrop-blur-sm sm:items-center sm:p-4"
       role="presentation"
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}
     >
-      <section role="dialog" aria-modal="true" aria-labelledby="preview-title" className="max-h-[92vh] w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+      <section role="dialog" aria-modal="true" aria-labelledby="preview-title" className="max-h-[92vh] w-full max-w-5xl overflow-hidden rounded-t-2xl bg-white shadow-2xl sm:rounded-2xl">
         <div className="flex items-center justify-between gap-4 border-b border-slate-100 px-5 py-4">
           <div className="min-w-0">
             <h2 id="preview-title" className="truncate font-bold text-slate-900">{image.name}</h2>
