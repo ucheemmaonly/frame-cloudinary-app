@@ -71,7 +71,7 @@ export default function Gallery({
                 : 'Upload your first image and it will appear here.'}
           </p>
           <Link to={isFavoritesPage ? '/gallery' : '/upload'} className="mt-5 inline-flex rounded-full bg-orange-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-orange-400">
-            {isFavoritesPage ? 'Explore all images ↗' : 'Upload your first image ↗'}
+            {isFavoritesPage ? 'Explore all images' : 'Upload your first image'}
           </Link>
         </div>
       ) : (

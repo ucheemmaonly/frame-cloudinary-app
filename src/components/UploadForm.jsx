@@ -72,7 +72,6 @@ export default function UploadForm({ onUpload, uploading, error, message }) {
             onDrop={handleDrop}
             className={`flex min-h-48 flex-col items-center justify-center rounded-2xl border-2 border-dashed px-5 py-7 text-center transition ${uploading ? 'cursor-not-allowed border-white/10 opacity-60' : 'cursor-pointer border-emerald-100/45 bg-white/5 hover:border-orange-300 hover:bg-white/10'}`}
           >
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-200/15 text-2xl text-emerald-100" aria-hidden="true">↑</span>
             <span className="mt-3 font-bold text-white">Drop your image here</span>
             <span className="mt-1 text-sm text-white/60">or click to browse your files</span>
             <input
@@ -97,7 +96,7 @@ export default function UploadForm({ onUpload, uploading, error, message }) {
           )}
 
           <button type="submit" disabled={!selectedFile || uploading} className="flex w-full items-center justify-center gap-3 rounded-full bg-orange-500 px-6 py-4 font-bold text-white transition hover:bg-orange-400 disabled:cursor-not-allowed disabled:bg-white/20 disabled:text-white/50">
-            {uploading ? <><span className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white" /> Uploading your image...</> : <>Upload to gallery <span aria-hidden="true">↗</span></>}
+            {uploading ? <><span className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white" /> Uploading your image...</> : <>Upload to gallery</>}
           </button>
 
           {localError && <p role="alert" className="rounded-xl border border-red-300/20 bg-red-950/40 px-4 py-3 text-sm text-red-100">{localError}</p>}

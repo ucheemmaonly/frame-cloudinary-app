@@ -30,7 +30,7 @@ export default function Navbar({ favoriteCount = 0 }) {
         </div>
 
         <NavLink to="/upload" className="shrink-0 rounded-full bg-orange-500 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-orange-400 sm:px-5 sm:py-3">
-          <span className="sm:hidden">+ Add</span><span className="hidden sm:inline">Add image ↗</span>
+          <span className="sm:hidden">+ Add</span><span className="hidden sm:inline">Add image</span>
         </NavLink>
       </nav>
     </header>

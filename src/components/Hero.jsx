@@ -15,7 +15,7 @@ export default function Hero({ imageCount = 0, favoriteCount = 0 }) {
           A calm little home for the images you love. Upload moments, save your favourites, and build a collection that feels like your own quiet corner of the world.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <PrimaryLink to="/upload">Upload an image <span aria-hidden="true">↗</span></PrimaryLink>
+          <PrimaryLink to="/upload">Upload an image</PrimaryLink>
           <Link to="/gallery" className="inline-flex items-center justify-center rounded-full border border-white/35 bg-white/10 px-6 py-3.5 font-bold text-white backdrop-blur-md transition hover:bg-white/20">Explore gallery</Link>
         </div>
         <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/70">

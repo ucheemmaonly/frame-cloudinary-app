@@ -32,7 +32,7 @@ export default function ImagePreviewModal({ image, onClose }) {
           <img src={image.url} alt={image.name} className="max-h-[calc(92vh-130px)] max-w-full object-contain" />
         </div>
         <div className="flex justify-end px-5 py-3">
-          <a href={image.url} target="_blank" rel="noreferrer" className="rounded-full bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-orange-500">Open original ↗</a>
+          <a href={image.url} target="_blank" rel="noreferrer" className="rounded-full bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-orange-500">Open original</a>
         </div>
       </section>
     </div>

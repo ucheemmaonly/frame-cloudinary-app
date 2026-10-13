@@ -43,7 +43,7 @@ export default function ImageCard({ image, onToggleFavorite, onPreview, onRemove
             Preview image
           </button>
           <div className="flex items-center gap-1">
-            <a href={image.url} target="_blank" rel="noreferrer" aria-label={`Open original image ${image.name}`} title="Open original image" className="flex h-10 w-10 items-center justify-center rounded-full text-lg text-white/65 transition hover:bg-white/10 hover:text-white">↗</a>
+            <a href={image.url} target="_blank" rel="noreferrer" title="Open original image" className="rounded-full px-4 py-2.5 text-sm font-semibold text-white/65 transition hover:bg-white/10 hover:text-white">Open original</a>
             <button type="button" onClick={() => onRemove(image.id)} title="Remove from this gallery only" aria-label={`Remove ${image.name} from gallery`} className="flex h-10 w-10 items-center justify-center rounded-full text-lg text-white/60 transition hover:bg-red-500/20 hover:text-red-200">×</button>
           </div>
         </div>

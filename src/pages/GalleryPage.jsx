@@ -12,7 +12,7 @@ export default function GalleryPage(props) {
             <h1 className="mt-3 text-5xl font-black tracking-tight text-white sm:text-7xl">Your gallery<span className="text-orange-400">.</span></h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-white/75">All the pictures you have collected, gathered in one peaceful place.</p>
           </div>
-          <Link to="/upload" className="inline-flex w-fit items-center gap-3 rounded-full bg-orange-500 px-5 py-3.5 font-bold text-white transition hover:bg-orange-400">Add a new image ↗</Link>
+          <Link to="/upload" className="inline-flex w-fit items-center gap-3 rounded-full bg-orange-500 px-5 py-3.5 font-bold text-white transition hover:bg-orange-400">Add a new image</Link>
         </div>
         <div className="rounded-[2rem] border border-white/20 bg-slate-950/35 p-3 shadow-2xl shadow-black/10 backdrop-blur-xl sm:p-6">
           <Gallery {...props} mode="all" />
