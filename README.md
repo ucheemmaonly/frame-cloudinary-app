@@ -11,22 +11,7 @@ FRAME is a React + Vite app with a full-screen nature photograph behind each pag
 
 React Router manages navigation. Gallery entries and favourite states are saved in this browser's `localStorage`.
 
-## 1. Configure Cloudinary
-
-Open `src/config/cloudinary.js` and replace `YOUR_CLOUD_NAME` with your real Cloudinary Cloud Name. Confirm that `CLOUDINARY_UPLOAD_PRESET` exactly matches your unsigned preset. Never put your Cloudinary API Secret in frontend code.
-
-## 2. Install and run
-
-Run these commands from the root of the extracted project:
-
-```bash
-npm install
-npm run dev
-```
-
-Open the local URL Vite prints, usually `http://localhost:5173/`.
-
-## 3. Test the app
+## . Test the app
 
 1. Visit `/upload` and upload a valid image.
 2. Visit `/gallery` and confirm the image appears.
